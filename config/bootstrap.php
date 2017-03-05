@@ -36,4 +36,9 @@ call_user_func(function () {
         }
         Configure::write('cake_env', $_env_name);
     }
+    
+    // 上書きするための設定を読み込む
+    if (file_exists($_env_dir . DS . 'override.php')) {
+        require_once ($_env_dir . DS . 'override.php');
+    }
 });
