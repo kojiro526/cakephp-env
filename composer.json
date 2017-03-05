@@ -1,0 +1,23 @@
+{
+    "name": "kojiro526/cakephp-env",
+    "description": "Environments plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": ">=3.0.0 <4.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "kojiro526\Environments\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "kojiro526\Environments\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
