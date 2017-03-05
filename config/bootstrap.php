@@ -28,13 +28,13 @@ call_user_func(function () {
         if (file_exists($_env_dir . DS . 'development.php')) {
             require_once ($_env_dir . DS . 'development.php');
         }
-        Configure::write('cake_env', 'development');
+        Configure::write('Environments.env_name', 'development');
     } else {
         // 環境変数で指定された環境名の設定ファイルが存在すれば読み込む
         if (file_exists($_env_dir . DS . $_env_name . '.php')) {
             require_once ($_env_dir . DS . $_env_name . '.php');
         }
-        Configure::write('cake_env', $_env_name);
+        Configure::write('Environments.env_name', $_env_name);
     }
     
     // 上書きするための設定を読み込む
