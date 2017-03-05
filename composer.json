@@ -11,12 +11,12 @@
     },
     "autoload": {
         "psr-4": {
-            "kojiro526\Environments\\": "src"
+            "Environments\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "kojiro526\Environments\\Test\\": "tests",
+            "Environments\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }
