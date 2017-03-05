@@ -29,7 +29,7 @@ composerで以下のようにインストールします。
 以下のコマンドでインストールします。
 
 ```
-composer require kojiro526/Environments
+composer require kojiro526/cakephp-env
 ```
 
 インストール後、`config/bootstrap.php`に以下を追記します。
