@@ -18,12 +18,13 @@ composerで以下のようにインストールします。
 {
 ==(略)==
     "repositories": [
-        {↲
-            "type": "git",↲
-            "url": "https://bitbucket.org/kojiro526/cakephp-env.git"↲
+        {
+            "type": "git",
+            "url": "https://bitbucket.org/kojiro526/cakephp-env.git"
         }
-    ],↲
+    ],
 ==(略)==
+｝
 ```
 
 以下のコマンドでインストールします。
