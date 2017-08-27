@@ -12,23 +12,6 @@
 
 composerで以下のようにインストールします。
 
-予め、このリポジトリをcomposer.jsonに追加しておく必要があります。
-```
-# composer.json に以下を追記
-{
-==(略)==
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://bitbucket.org/kojiro526/cakephp-env.git"
-        }
-    ],
-==(略)==
-｝
-```
-
-以下のコマンドでインストールします。
-
 ```
 composer require kojiro526/cakephp-env
 ```
@@ -64,8 +47,19 @@ config/
 
 #### ローカルサーバを立ち上げる場合
 
+以下のように環境変数を設定して起動します。
+
+Linux、OSX
+
 ```
 env CAKE_ENV=production ./bin/cake server
+```
+
+Windows
+
+```
+set CAKE_ENV=production
+.\bin\cake server
 ```
 
 #### Apacheで設定する場合
